@@ -31,48 +31,47 @@
                 android:id="@+id/inputSymbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-
                 android:layout_column="1"
                 android:inputType="phone" />
-        </TableRow>
 
+        </TableRow>
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
-            <EditText
-                android:id="@+id/priceText"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="0"
-                android:text="@string/last_time_price" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/name_text"
+                android:id="@+id/nameLabel" />
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"/>
 
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/last_time_price"
+                android:id="@+id/priceLabel"
+                android:layout_column="0"/>
             <TextView
                 android:id="@+id/priceValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-        </TableRow>
+                               android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
 
-            <EditText
-                android:id="@+id/nameText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:text="@string/name_text" />
-
-            <TextView
-                android:id="@+id/nameView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
         <TableRow
@@ -83,15 +82,16 @@
                 android:id="@+id/tradeTimeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last Trade Time"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:text="@string/time"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"/>
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medium Text"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                             android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"/>
         </TableRow>
 
         <TableRow
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_column="0"
 
-                android:text="52 Week Range"
+                android:text="@string/week_Range"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
-                android:text="Change"
+                android:text="@string/change"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
@@ -134,10 +134,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
         </TableRow>
+
+
 
     </TableLayout>
 
