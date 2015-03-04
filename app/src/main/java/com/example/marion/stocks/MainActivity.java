@@ -18,6 +18,7 @@ import java.io.IOException;
 public class MainActivity extends ActionBarActivity {
     private Stock stock;
     private Button done;
+    private  TextView priceValue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,15 +94,15 @@ public class MainActivity extends ActionBarActivity {
                 String priceTemp  = stock.getLastTradePrice();
                 CharSequence charSequence = new String(priceTemp);
 
-                TextView priceValue = (TextView)findViewById(R.id.priceValue);
+             priceValue = (TextView)findViewById(R.id.priceValue);
                 priceValue.setText(charSequence);
 
-                TextView rangeTemp = (TextView)findViewById(R.id.rangeLabe);
+                TextView rangeTemp = (TextView)findViewById(R.id.rangeLabel);
                 CharSequence raTemp = stock.getRange();
                 rangeTemp.setText(raTemp);
 
                 String changeTemp = stock.getChange();
-                TextView changeText = (TextView)findViewById(R.id.changeView);
+                TextView changeText = (TextView)findViewById(R.id.changeLabel);
                 changeText.setText((CharSequence)changeTemp);
 
                 String nameTemp = stock.getName();
